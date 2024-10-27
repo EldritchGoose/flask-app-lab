@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode .navbar {
+    background-color: #333 !important;
+    color: #f0f0f0;
+}
+
+body.dark-mode .navbar a {
+    color: #f0f0f0 !important;
+}
+
+body.dark-mode h2 {
+    color: #f0f0f0;
+    border-bottom: 2px solid #444;
+}
+
+/* Card Styling */
+section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode section {
+    background-color: #333;
+    color: #f0f0f0;
+    border-color: #444;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode section:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+}
