@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Привіт, {{ user }}!</h2>
+<form method="POST">
+    <h3>Додати кукі</h3>
+    <input type="text" name="cookie_key" placeholder="Ключ" required>
+    <input type="text" name="cookie_value" placeholder="Значення" required>
+    <button type="submit" name="add_cookie">Додати</button>
+</form>
+
+<form method="POST">
+    <h3>Видалити кукі</h3>
+    <input type="text" name="cookie_key" placeholder="Ключ">
+    <button type="submit" name="delete_cookie">Видалити</button>
+</form>
+
+<h3>Поточні кукі:</h3>
+<table>
+    <tr><th>Ключ</th><th>Значення</th></tr>
+    {% for key, value in cookies %}
+    <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+    {% endfor %}
+</table>
+
+<h3>Кольорова схема</h3>
+<a href="{{ url_for('change_theme', theme='light') }}">Світла</a>
+<a href="{{ url_for('change_theme', theme='dark') }}">Темна</a>
+{% endblock %}
