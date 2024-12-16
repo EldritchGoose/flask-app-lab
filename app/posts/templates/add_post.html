@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% import 'form_macros.html' as macros %}
+
+{% block title %}Add Post{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Add a New Post</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ macros.render_field(form.title) }}
+        {{ macros.render_field(form.content) }}
+        {{ macros.render_field(form.category) }}
+        {{ macros.render_field(form.publish_date) }}
+        {{ macros.render_field(form.is_active) }}
+        <button type="submit" class="btn btn-primary">Add Post</button>
+    </form>
+</div>
+{% endblock %}

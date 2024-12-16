@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "title": "First Post",
+        "content": "Contain information about \"First Post\"",
+        "author": "Administrator",
+        "category": "tech",
+        "publish_date": "2020-01-01",
+        "is_active": true
+    },
+    {
+        "id": 2,
+        "title": "232131",
+        "content": "23131231",
+        "author": "Bob The Second",
+        "category": "science",
+        "publish_date": "0001-03-12",
+        "is_active": false
+    },
+    {
+        "id": 3,
+        "title": "333333",
+        "content": "12",
+        "category": "lifestyle",
+        "publish_date": "2024-11-01",
+        "is_active": true
+    }
+]
